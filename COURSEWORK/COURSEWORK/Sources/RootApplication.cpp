@@ -17,6 +17,7 @@ void RootApplication::BeginProcess() {
 int RootApplication::ExcApp() {
 	for (; BaseTree::x < 9; ++(BaseTree::x)) {
 		if ((downCheck->Check() + upCheck->Check() + rightCheck->Check() == 1) && BaseTree::field[x][y] == '1') {
+			BaseTree::field[BaseTree::x][BaseTree::y] = 'F';
 			break;
 		}
 	}

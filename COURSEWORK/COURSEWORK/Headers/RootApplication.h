@@ -10,7 +10,7 @@
 class RootApplication : public BaseTree {
 private:
 	DownCheck* downCheck = new DownCheck();
-	DownCheck* upCheck = new DownCheck();
+	UpCheck* upCheck = new UpCheck();
 	RightCheck* rightCheck = new RightCheck();
 	NextSteps* step = new NextSteps();
 	OutPutField* out = new OutPutField();
